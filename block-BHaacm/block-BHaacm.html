@@ -1,0 +1,135 @@
+<!-- writeCode
+
+- Create a responsive layout according to the design shown below.
+
+#### Large Screen view(Above 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-1-desktop-view.png)
+
+#### Small Screen view(Below 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-1-mob-view.png)
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper.
+
+- Pay attention to the codes, your code quality matters a lot.
+
+- Try to implement the layout as exactly as it has been provided in the design.
+
+- Pay attention to minor things like spacing, alignment, size, etc.
+
+- Use any font-family which suits better for the assignment.
+
+- Once you are done with the assignment connect with the mentor and get the code reviewed. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Responsive Design</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla&family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/cec8cacc51.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  </head>
+  <body>
+    <header class="head">
+      <div class="head-width flex flex-direction">
+        <a class="image-logo" href="">
+          <img src="assets/logo.png" width="90" />
+        </a>
+        <nav>
+          <ul class="inline head-bar nav-center">
+            <li><a href="#">HOME</a></li>
+            <li><a id="active" href="#">BLOG</a></li>
+            <li><a href="#">ABOUT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="shrink">
+        <div class="section-width flex reverse">
+          <div class="width-adjust">
+            <h1 class="heading-font">What is lorem impsum</h1>
+            <p class="para-font">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.remaining essentially unchanged. It was popularised in
+              the 1960s with the release of Letraset sheets containing Lorem
+              Ipsum passages, and more recently with desktop publishing software
+              like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <button class="read-btn">Read More</button>
+          </div>
+          <img src="assets/01.png" />
+        </div>
+      </section>
+      <section class="background-white">
+        <h1 class="blog-head">OUR BLOG</h1>
+        <div class="section-width flex full-width">
+          <div class="flex-shrink">
+            <img src="./assets/02.png" />
+            <h2 class="image-heading">why do we use it ?</h2>
+            <p class="image-para">
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not
+              only five centuries, but also the leap into electronic
+              typesetting, remaining essentially unchanged. It was
+            </p>
+            <button class="para-btn">Read More</button>
+          </div>
+          <div class="flex-shrink">
+            <img src="./assets/03.png" />
+            <h2 class="image-heading">where does it come from ?</h2>
+            <p class="image-para">
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not
+              only five centuries, but also the leap into electronic
+              typesetting, remaining essentially unchanged. It was
+            </p>
+            <button class="para-btn">Read More</button>
+          </div>
+          <div class="flex-shrink">
+            <img src="./assets/04.png" />
+            <h2 class="image-heading">where can i get some ?</h2>
+            <p class="image-para">
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not
+              only five centuries, but also the leap into electronic
+              typesetting, remaining essentially unchanged. It was
+            </p>
+            <button class="para-btn">Read More</button>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="section-width flex footer-flex">
+          <small>&copy; AltCampus</small>
+          <nav class="nav-icon">
+            <ul class="inline bar-center">
+              <li><i class="fa-brands fa-facebook-square"></i></li>
+              <li><i class="fa-brands fa-twitter-square"></i></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
