@@ -1,0 +1,300 @@
+<!-- writeCode
+
+- Create a responsive layout according to the design shown below.
+
+#### Large Screen view(Above 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-2.png)
+
+#### Small Screen view(Below 768px)
+
+1. Figure what would be the best possible way to display the layout on small screens.
+
+2. Create hmaburger icon to toggle menu on mobile view.
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper.
+- Pay attention to the codes, your code quality matters a lot.
+- Try to implement the layout as exactly as it has been provided in the design.
+- Pay attention to minor things like spacing, alignment, size, etc.
+- Use "Nunito" font-family for the assignment.
+- Figure out the best possible way to display the layout on small screens.
+- Create hmaburger icon to toggle menu on small screen view.
+- Once you are done with the assignment connect with the mentor and get the code reviewed. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Respondive page</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla&family=Nunito:wght@400;700&family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cec8cacc51.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <section class="position hero">
+        <div class="block">
+          <div class="overlay">
+            <div class="width">
+              <header class="flex-center flex position">
+                <h1 class="head-tag">Alt Events</h1>
+                <input type="checkbox" id="menu-toggle" />
+                <label class="menu-button-container" for="menu-toggle">
+                  <div class="menu-button"></div>
+                </label>
+                
+                  <ul class="menu nav-font inline adjust">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><button class="btn-join" href="#">Join Us</button></li>
+                  </ul>
+                
+                <!-- <nav class="display-none">                 <ul class="nav-font inline adjust">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><button class="btn-join">Join Us</button></li>
+                  </ul>
+                </nav> -->
+              </header>
+              <div class="flex reverse">
+                <div class="mt-top">
+                  <h1 class="font">Web Developer</h1>
+                  <h1 class="font">Conference <span>2020</span></h1>
+                  <button class="register-btn">Register Now</button>
+                </div>
+                <img class="hero-img" src="assets/hero.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="padding">
+        <div class="section-width flex one-by-one column">
+          <img class="image-adjust" src="assets/about.png" />
+          <div class="heading-width">
+            <h1 class="event-font">About the Event</h1>
+            <p class="event-para">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley
+            </p>
+            <button class="know-btn">Know More</button>
+          </div>
+        </div>
+      </section>
+      <section class="section-color">
+        <h1 class="join-section">why you should join</h1>
+        <div class="section-width">
+          <div class="flex one-by-one join">
+            <fieldset class="join-box">
+              <legend>1</legend>
+              <h2 class="network-font">Network</h2>
+              <p class="para-font">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's
+              </p>
+            </fieldset>
+            <fieldset class="join-box">
+              <legend>2</legend>
+              <h2 class="network-font">Great Speakers</h2>
+              <p class="para-font">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's
+              </p>
+            </fieldset>
+            <fieldset class="join-box">
+              <legend>3</legend>
+              <h2 class="network-font">Information</h2>
+              <p class="para-font">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's
+              </p>
+            </fieldset>
+          </div>
+        </div>
+      </section>
+      <section class="back">
+        <div class="section-width">
+          <h1 class="join-section">Schedule</h1>
+          <div class="flex column-width join">
+            <div class="date-circle">
+              <h2 class="date-adjust">06 Sept</h2>
+            </div>
+            <img class="image-size" src="assets/schedule01.jpg" />
+            <div class="digital-width">
+              <h2 class="digital-font">Digital World Elevent Conversation</h2>
+              <p class="para-point">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry'sLorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's
+              </p>
+            </div>
+          </div>
+          <div class="dotted-line"></div>
+          <div class="flex column-width join">
+            <div class="date-white">
+              <h2 class="date-adjust-white">07 Sept</h2>
+            </div>
+            <img class="image-size" src="assets/schedule02.jpg" />
+            <div class="digital-width">
+              <h2 class="digital-font">Web Design Conversation</h2>
+              <p class="para-point">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry'sLorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="flex column-width join">
+            <div class="date-white">
+              <h2 class="date-adjust-white">08 Sept</h2>
+            </div>
+            <img class="image-size" src="assets/schedule03.jpg" />
+            <div class="digital-width">
+              <h2 class="digital-font">Web Devlopment Conversation</h2>
+              <p class="para-point">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry'sLorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's
+              </p>
+            </div>
+          </div>
+          <div class="line-last"></div>
+          <div class="flex column-width join">
+            <div class="date-white">
+              <h2 class="date-adjust-white">09 Sept</h2>
+            </div>
+            <img class="image-size" src="assets/schedule01.jpg" />
+            <div class="digital-width">
+              <h2 class="digital-font">Digital Marketting Conference</h2>
+              <p class="para-point">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry'sLorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's
+              </p>
+            </div>
+          </div>
+          <div class="center">
+            <button class="download-btn">Download Schedule</button>
+          </div>
+        </div>
+      </section>
+      <section class="sketch-section flex column">
+        <div class="mt-size center">
+          <img src="./assets/speaker.png" />
+          <p class="speaker-font">20+</p>
+          <p class="speaker">Great Speaker</p>
+        </div>
+        <div class="total-topic">
+          <div class="Total-color center">
+            <img class="idea-img" src="./assets/idea.png" />
+            <p class="fifty-font">50+</p>
+            <p class="fifty-font">Total Topics</p>
+          </div>
+        </div>
+        <div class="mt-size center">
+          <img src="./assets/participants.png" />
+          <p class="speaker-font">300+</p>
+          <p class="speaker">Participants</p>
+        </div>
+        <div class="mt-size center">
+          <img src="./assets/participants.png" />
+          <p class="speaker-font">20+</p>
+          <p class="speaker">Sponsers</p>
+        </div>
+      </section>
+      <section class="padding position-icon">
+        <div class="section-width">
+          <img class="fit" src="assets/banner.png" height="400" width="100%" />
+          <div class="circle">
+            <i class="fa-solid fa-play icon-font"></i>
+          </div>
+        </div>
+      </section>
+      <section class="news-section">
+        <h1 class="join-section">Our Latest News</h1>
+        <div class="flex mt-margin column">
+          <div class="news-width">
+            <img src="assets/news-01.png" height="230" width="100%" />
+            <h2 class="news-header">
+              How to build a great porfolio as a begner developer
+            </h2>
+            <p class="news-para">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock, a Latin
+            </p>
+            <p class="read-line">Read More</p>
+          </div>
+          <div class="news-width">
+            <img src="assets/news-02.png" height="230" width="100%" />
+            <h2 class="news-header">
+              4 Common situation while using Git and how to solve them
+            </h2>
+            <p class="news-para">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock, a Latin
+            </p>
+            <p class="read-red">Read More</p>
+          </div>
+          <div class="news-width">
+            <img src="assets/news-03.png" height="230" width="100%" />
+            <h2 class="news-header">
+              Basic Unix commands that you should know
+            </h2>
+            <p class="news-para">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock, a Latin
+            </p>
+            <p class="read-line">Read More</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="section-width flex column center">
+        <img src="./assets/footer-logo.png" height="40" />
+        <div>
+          <p class="white">Quick Links</p>
+          <div>
+            <nav>
+              <ul class="inline a one-by-one">
+                <li><a class="recent" href="#">Home</a></li>
+                <li><a class="recent-shift" href="#">About s</a></li>
+                <li><a class="recent-shift" href="#">Contact Us</a></li>
+                <li><a class="recent-shift" href="#">Service</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="mt-right now">
+          <p class="white">Follow Us</p>
+          <i class="fa-brands fa-facebook color-white"></i>
+          <i class="fa-brands fa-twitter-square color-white"></i>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <small> &copy; Altcampus Services Pvt Ltd,2018-present</small>
+    </div>
+  </body>
+</html>
